@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e8e8e8 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  border: 2px solid #e8e8e8;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.blog-list-container {
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  border: 1px solid #333;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.blog {
+  flex-basis: 90%;
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  height: fit-content;
+  border-radius: 10px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+}
+
+.blog-text-container {
+  flex-basis: 90%;
+}
+
+.blog:first-child {
+  margin-top: 1.5rem;
+}
+
+.blog:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.blog-title {
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.log-text {
+  font-weight: 400;
+}
+
+.blog-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 10%;
+}
+
+.blog-delete-btn {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #d90429;
+  border: 1px solid #d90429;
+  border-radius: 5px;
+}
+
+.delete-blog-btn-img {
+  width: 15px;
+}
+
+.add-blog-container {
+  width: 90%;
+  height: 10%;
+  border: 1px solid #333;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#add-blog-input {
+  padding: 1rem 0.75rem;
+  flex-basis: 35%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-blog-btn-container {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-blog-btn {
+  border: 1px solid #368c3e;
+  background-color: #368c3e;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
